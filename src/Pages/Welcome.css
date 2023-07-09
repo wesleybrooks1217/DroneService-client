@@ -1,0 +1,50 @@
+body {
+    background-color: #2c2c2c;
+    background-size: 100%;
+    /*background-image: url('./Images/background.png');*/
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+.titleContainer {
+    position: fixed;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 300px 70px 90px;
+    grid-template-areas: 
+        'title'
+        'description'
+        'login';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.title {
+    font-size: 10ch;
+    grid-area: title;
+    justify-self: center;
+    align-self: center;
+}
+
+.description {
+    grid-area: description;
+    justify-self: center;
+    align-self: center;
+}
+
+.loginButton {
+    grid-area: login;
+    justify-self: center;
+    align-self: center;
+}
